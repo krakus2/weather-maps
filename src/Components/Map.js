@@ -15,9 +15,8 @@ export default compose(
     onClick={props.onClick}
   >
     {
-      props.markers.map((elem, i) => <Marker key={i} position={{ lat: elem.lat, lng: elem.lng }} /> )
+      props.markers.map((elem, i) => <Marker key={elem.id} position={{ lat: elem.lat, lng: elem.lng }} /> )
     }
-
   </GoogleMap>
 );
 
